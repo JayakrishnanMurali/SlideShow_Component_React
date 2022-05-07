@@ -1,0 +1,68 @@
+
+.banner{
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.inactive{
+    display: none;
+}
+
+.active{
+    display: inline-block;
+}
+
+.slide{
+    position: relative;
+}
+
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.arrow{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    top: 12vh;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dots{
+    background-color: rgba(54, 46, 46, 0.529);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot{
+    cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0px 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.next,.prev{
+    color: white;
+    font-size: 1rem;
+    background-color: blueviolet;
+    padding: 1rem;
+}
+
+.active-dot,
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
